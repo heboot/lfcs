@@ -1,0 +1,14 @@
+<import src="../../utils/wxParse/wxParse.wxml"/> 
+<scroll-view class="news-container" scroll-y="true">
+
+  <view hidden="true">
+  <image class="news-image" src="{{newsItem.image}}" mode="scaleToFill"></image>
+</view><view>
+  <text hidden="true" class="news-title">{{newsItem.title}}</text></view>
+
+
+   
+ <view class="article__content wxParse">
+            <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+        </view>
+</scroll-view>

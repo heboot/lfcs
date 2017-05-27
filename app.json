@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/news/news",
+    "pages/about/about",
+    "pages/gszc/gszc",
+    "pages/gszc/dljz",
+    "pages/servies/gszc",
+    "pages/servies/dljz",
+    "pages/servies/zzbl",
+    "pages/servies/sbzl",
+    "pages/servies/hp"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "郑州代理记账",
+    "navigationBarTextStyle": "black"
+  }
+}

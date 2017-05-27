@@ -1,0 +1,109 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true">
+  <view class="container">
+    <swiper indicator-dots="true" class="banner" autoplay="true" interval="2000" duration="500">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="banner-item" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="navs">
+      <block>
+        <view bindtap="gszcTap" class="nav-item">
+          <image src="../images/icon-new-list2.png" class="nav-image" />
+          <text>工商注册</text>
+        </view>
+      </block>
+
+      <block>
+        <view bindtap="dljzTap" class="nav-item">
+          <image src="../images/icon-new-list2.png" class="nav-image" />
+          <text>代理记账</text>
+        </view>
+      </block>
+
+      <block>
+        <view bindtap="dljzTap" class="nav-item">
+          <image src="../images/icon-new-list2.png" class="nav-image" />
+          <text>资质办理</text>
+        </view>
+      </block>
+
+
+    </view>
+
+    <view class="navs">
+      <block>
+        <view bindtap="dljzTap" class="nav-item">
+          <image src="../images/icon-new-list2.png" class="nav-image" />
+          <text>商标专利</text>
+        </view>
+      </block>
+      <block>
+        <view bindtap="dljzTap" class="nav-item">
+          <image src="../images/icon-new-list2.png" class="nav-image" />
+          <text>环评服务</text>
+        </view>
+      </block>
+
+      <block>
+        <view bindtap="aboutTap" class="nav-item">
+          <image src="../images/icon-new-list2.png" class="nav-image" />
+          <text>关于我们</text>
+        </view>
+      </block>
+
+
+    </view>
+
+
+
+    <view class="news-titlebg">
+      <text class="news-title">新闻中心</text>
+    </view>
+
+
+    <view wx:for="{{news}}" wx:key="id">
+      <view bindtap="newsTap" class="article__item" data-id="{{item.id}}">
+        <view class="article__thumb">
+          <image class="article__image" src="{{item.image}}"></image>
+        </view>
+        <view class="article__info">
+          <view class="article__title article__title__large">{{item.title}}</view>
+          <!--<view class="article__desc">
+                {{ summary }}
+            </view>-->
+          <view class="article__desc">
+            <text wx:if="{{ tag }}" class="article__source"></text>
+            <text class="article__time">{{item.time}}</text>
+            <view class="article__count">
+              <image class="article__icon" src="../images/icon-comt.png"></image>
+              <text>{{item.commentCount}}</text>
+              <image class="article__icon" src="/image/icon-priaze.png"></image>
+              <text>{{ parise }}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+
+
+
+
+
+
+    <!--<view class="news-item">
+
+      <image class="news-item-image" src="../images/m.jpg"></image>
+
+      <text class="news-item-title">郑州立方记账，也许是河南地区最6的代理\n记账机构了</text>
+
+     
+    </view>-->
+
+  </view>
+</scroll-view>
