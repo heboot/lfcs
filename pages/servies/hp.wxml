@@ -1,2 +1,11 @@
-<!--hp.wxml-->
-<text>hp.wxml</text>
+<!--sbzl.wxml-->
+<import src="../common/mp.wxml"/>
+<view class="gscontainer">
+
+
+<view class="gsitem">
+ <image class="gsimage" src="../images/hj.png"></image>
+  <text class="gstext">提供全省范围建设项目环境影响评价服务</text>
+</view>
+ <template is="mp" ></template>
+</view>

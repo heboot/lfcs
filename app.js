@@ -9,6 +9,13 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度  
+      success: function (res) {
+
+
+      }
+    })
   },
   getUserInfo: function (cb) {
     var that = this
@@ -28,13 +35,38 @@ App({
       })
     }
   },
+  telTap: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '037169888198' //仅为示例，并非真实的电话号码
+    })
+  },
+
+  phoneTap: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '15838111315' //仅为示例，并非真实的电话号码
+    })
+  },
+  addressTap: function (e) {
+
+    wx.openLocation({
+      latitude: 34.532289,
+      longitude: 113.362872,
+      name: "立方财税",
+      address: "新密市大鸿路与栖霞路交叉口栖凤苑（世豪公馆）6楼606号",
+      scale: 28
+    })
+
+
+  },
   globalData: {
     userInfo: null,
     news: [
       {
-        id: 1, image: "../images/m.jpg", title: "立方财税荣获国家级进步奖", time: "2017-5-22", commentCount: "111", content: "<h2>立方财税荣获国家级进步奖</h2><img  src='../images/m.jpg'></img><p> 立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖</p><p> 立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖立方财税荣获国家级进步奖 </p>" },
-      { id: 2, image: "../images/icon-new-list1.png", title: "习近平主席今日访问立方财税", time: "2017-5-22", commentCount: "111", content: "<h2>习近平主席今日访问立方财税</h2><img  src='../images/m.jpg'></img><p> 习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税</p><p> 习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税习近平主席今日访问立方财税 </p>" },
-      { id: 3, image: "../images/icon-new-list1.png", title: "立方财税杨志刚出席泛亚太地区工商会议", time: "2017-5-22", commentCount: "111", content: "立方财税杨志刚出席泛亚太地区工商会议", time: "2017-5-22", commentCount: "111", content: "<h2>习近平主席今日访问立方财税</h2><img  src='../images/m.jpg'></img><p> 立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议</p><p> 立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议立方财税杨志刚出席泛亚太地区工商会议 </p>" },
-      { id: 4, image: "../images/icon-new-list1.png", title: "立方财税也许是中原地区最6的代理记账机构", time: "2017-5-22", commentCount: "111", content: "<h2>立方财税也许是中原地区最6的代理记账机构</h2><img  src='../images/m.jpg'></img><p> 立方财税也许是中原地区最6的代理记账机构立方财税也许是中原地区最6的代理记账机构立方财税也许是中原地区最6的代理记账机构立方财税也许是中原地区最6的代理记账机构</p><p> 立方财税也许是中原地区最6的代理记账机构立方财税也许是中原地区最6的代理记账机构立方财税也许是中原地区最6的代理记账机构立方财税也许是中原地区最6的代理记账机构 </p>" },],
+        id: 1, image: "http://oqt6hm3qt.bkt.clouddn.com/news12_small.png", title: "“多证合一”究竟怎么“合”，这张图来告诉你", time: "2017-5-22",  content: " 商事制度改革是李克强总理上任以来不断推进的一项重要工作。2017年5月12日，国务院办公厅正式发布《关于加快推进“多证合一”改革的指导意见》，并明确提出要确保在10月1日之前，将“多证合一”改革落到实处。从“三证合一”到“五证合一”，再到“多证合一”，总理今年力推的“多证合一”究竟怎么“合”？它又和“三证合一”、“五证合一”有何不同？这一张图来告诉你。<br/><img  src='http://oqt6hm3qt.bkt.clouddn.com/640'></img>"
+      },
+      {
+        id: 2, image: "http://oqt6hm3qt.bkt.clouddn.com/news22_small.png", title: "会计人员不容忽视做账过程中的“证据链”", time: "2017-5-22",   content: "<br/><img  src='http://oqt6hm3qt.bkt.clouddn.com/news1.jpeg'></img>"
+      },
+    ],
   }
 })

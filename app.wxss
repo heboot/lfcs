@@ -9,3 +9,112 @@
   box-sizing: border-box;
 } 
 
+
+/* about.wxss */
+
+.aboutlogo {
+  margin-left: 20px;
+  width: 310rpx;
+  height: 145rpx;
+}
+
+.about_name {
+  margin-top: 90rpx;
+  margin-left: 270rpx;
+  display: flex;
+}
+
+.about_container {
+  width: 100%;
+  display: flex;
+}
+
+.about_line {
+  background-color: #eee;
+  height: 5px;
+  width: 75%;
+}
+
+.about_line2 {
+  align-items: right;
+  align-content: right;
+  display: inline-flex;
+  margin-left: 5%;
+  background-color: #1296db;
+  height: 5px;
+  width: 20%;
+}
+
+.about_line_container {
+  display: flex;
+  align-items: right;
+  align-content: right;
+}
+
+.about_tel {
+  margin-left: 20px;
+  margin-top: 10px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  width: 500rpx;
+}
+
+.about_tel_address {
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 20px;
+  height: 90rpx;
+  display: flex;
+}
+
+.about_tel_image_address {
+  width: 20px;
+  height: 20px;
+}
+
+.about_tel_image {
+  width: 20px;
+  height: 20px;
+}
+
+.about_tel_text {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.about_bottom {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #1296db;
+  height: 50px;
+}
+
+.about_bottom_text {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  color: white;
+  float: right;
+  text-align: right;
+  font-size: 14px;
+}
+
+.about_ewm {
+  margin-left: 15px;
+  margin-top: 20px;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.about_tel_container {
+  display: flex;
+}
+
+.about_tel_arrow{
+  width: 15px;
+  height: 15px;
+}
+

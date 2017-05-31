@@ -1,0 +1,71 @@
+<template name="mp">
+  <view class="about_container">
+    <image class="aboutlogo" src="../images/lflogo.jpg"></image>
+
+    <view class="about_name">
+      <text>杨   刚</text>
+    </view>
+
+
+  </view>
+
+  <view class="about_line_container">
+    <view class="about_line"></view>
+    <view class="about_line2"></view>
+  </view>
+
+
+
+
+  <view class="about_tel_container">
+
+
+
+    <view class="about_tel_container_child">
+
+
+      <view class="about_tel" bindtap="telTap">
+        <image class="about_tel_image" src="../images/tel.png"></image>
+        <text class="about_tel_text">0371-69988198</text>
+        <image class="about_tel_arrow" src="../images/arrow.png"></image>
+      </view>
+
+
+      <view class="about_tel" bindtap="phoneTap">
+        <image class="about_tel_image" src="../images/phone.png"></image>
+        <text class="about_tel_text">15238371314</text>
+        <image class="about_tel_arrow" src="../images/arrow.png"></image>
+      </view>
+
+
+      <view class="about_tel">
+        <image class="about_tel_image" src="../images/mail.png"></image>
+        <text class="about_tel_text">1984151898@qq.com</text>
+      </view>
+
+
+
+
+
+
+    </view>
+
+    <view class="about_ewm_container">
+      <image class="about_ewm" src="../images/ewm1.png"></image>
+    </view>
+
+
+
+  </view>
+  <view class="about_tel_address" bindtap="addressTap">
+    <image class="about_tel_image_address" mode="scaleToFill" src="../images/address.png"></image>
+    <text class="about_tel_text">新密市大鸿路与栖霞路交叉口栖凤苑（世豪公馆）6楼606号</text>
+    <image class="about_tel_arrow" src="../images/arrow.png"></image>
+  </view>
+
+  <view class="about_bottom">
+
+    <text class="about_bottom_text">您 身 边 的 财 务 管 家</text>
+
+  </view>
+</template>

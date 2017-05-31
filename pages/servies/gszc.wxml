@@ -1,2 +1,25 @@
 <!--gszc.wxml-->
-<text>gszc.wxml</text>
+<import src="../common/mp.wxml"/>
+<view class="gscontainer">
+
+
+<view class="gsitem">
+ <image class="gsimage" src="../images/gszc.png"></image>
+  <text class="gstext">各类公司注册服务</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/gsbg.png"></image>
+  <text class="gstext">公司变更服务</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/gszx.png"></image>
+  <text class="gstext">公司注销</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/qy.png"></image>
+  <text class="gstext">企业公示(年报)</text>
+</view>
+
+<template is="mp" ></template>
+
+</view>

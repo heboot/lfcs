@@ -1,13 +1,10 @@
-
-<map id="map" longitude="113.362872" latitude="34.532289" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<import src="../common/mp.wxml"/>
+<map id="map" longitude="113.362872" latitude="34.532289" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;">
+</map>
 
 <scroll-view scroll-y="true">
-  <view>
-     郑州立方财税
+<template is="mp" ></template>
 
-    <view> TEL：13838383505</view><view>
+ 
 
-     0371-69988198</view>
-  
-  </view>
 </scroll-view>

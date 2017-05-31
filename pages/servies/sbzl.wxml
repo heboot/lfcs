@@ -1,2 +1,19 @@
 <!--sbzl.wxml-->
-<text>sbzl.wxml</text>
+<import src="../common/mp.wxml"/>
+<view class="gscontainer">
+
+
+<view class="gsitem">
+ <image class="gsimage" src="../images/sbzc.png"></image>
+  <text class="gstext">商标注册</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/zl.png"></image>
+  <text class="gstext">专利申请</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/rz.png"></image>
+  <text class="gstext">质量 环境职业健康体系认证</text>
+</view>
+<template is="mp"></template>
+</view>

@@ -1,2 +1,23 @@
-<!--dljz.wxml-->
-<text>dljz.wxml</text>
+<!--gszc.wxml-->
+<import src="../common/mp.wxml"/>
+<view class="gscontainer">
+
+
+<view class="gsitem">
+ <image class="gsimage" src="../images/dljz_money.png"></image>
+  <text class="gstext">小规模纳税人200元/月起</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/dljz_money.png"></image>
+  <text class="gstext">一般纳税人500元/月起</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/dljz_ch.png"></image>
+  <text class="gstext">税收筹划</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/dljz_zx.png"></image>
+  <text class="gstext">税收变更、注销</text>
+</view>
+<template is="mp" ></template>
+</view>

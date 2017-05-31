@@ -1,2 +1,27 @@
-<!--zzbl.wxml-->
-<text>zzbl.wxml</text>
+<!--gszc.wxml-->
+<import src="../common/mp.wxml"/>
+<view class="gscontainer">
+
+
+<view class="gsitem">
+ <image class="gsimage" src="../images/fw.png"></image>
+  <text class="gstext">房屋建筑（房地产资质）</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/yl.png"></image>
+  <text class="gstext">市政工程 园林绿化</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/zx.png"></image>
+  <text class="gstext">建筑劳务  装饰装修  土石方</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/ylqx.png"></image>
+  <text class="gstext">医疗器械</text>
+</view>
+<view class="gsitem">
+ <image class="gsimage" src="../images/dlys.png"></image>
+  <text class="gstext">道路运输等</text>
+</view>
+<template is="mp" ></template>
+</view>

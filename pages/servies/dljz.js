@@ -62,5 +62,28 @@ Page({
    */
   onShareAppMessage: function () {
   
+  }, telTap: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '037169988198' //仅为示例，并非真实的电话号码
+    })
+  },
+
+  phoneTap: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: '15238371314' //仅为示例，并非真实的电话号码
+    })
+  },
+  addressTap: function (e) {
+
+    wx.openLocation({
+      latitude: 34.532289,
+      longitude: 113.362872,
+      name: "立方财税",
+      address: "新密市大鸿路与栖霞路交叉口栖凤苑（世豪公馆）6楼606号",
+      scale: 28
+    })
+
+
   }
+
 })

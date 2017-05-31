@@ -5,9 +5,9 @@ var news = getApp().globalData.news
 Page({
   data: {
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      '../images/ban1.jpg',
+      '../images/ban2.png',
+      '../images/ban3.jpg'
     ],
     news:news,
     navs: [{ icon: "../images/icon-new-list1.png", name: "工商注册", typeId: 0 },

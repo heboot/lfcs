@@ -2,12 +2,12 @@
 .banner{
   width:750rpx;
   background-color: #eee;
-  height: 380rpx;
+  height: 420rpx;
 }
 
 .banner-item{
   width: 100%;
-  height: 200px;
+  height: 420rpx;
 }
 
 .navs {
@@ -30,7 +30,7 @@
 }
 
 .nav-item text {
-  padding-top: 20rpx;
+  padding-top: 10rpx;
   font-size: 25rpx;
 }
 
