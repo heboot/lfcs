@@ -16,6 +16,18 @@ App({
 
       }
     })
+
+    console.log("request")
+    wx.request({
+      url: 'https://oqt6hm3qt.bkt.clouddn.com/news.json', //仅为示例，并非真实的接口地址
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+      
+    })
   },
   getUserInfo: function (cb) {
     var that = this
