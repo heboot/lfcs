@@ -4,7 +4,7 @@
     <swiper indicator-dots="true" class="banner" autoplay="true" interval="2000" duration="500">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
-          <image   src="{{item}}" class="banner-item" />
+          <image src="{{item}}" class="banner-item" />
         </swiper-item>
       </block>
     </swiper>
@@ -17,12 +17,12 @@
         </view>
       </block>
 
-      <block>
-        <view bindtap="dljzTap" class="nav-item">
+      <!--<block>
+        <view hidden="true" bindtap="dljzTap" class="nav-item">
           <image src="../images/menu_dljz.png" class="nav-image" />
           <text>代理记账</text>
         </view>
-      </block>
+      </block>-->
 
       <block>
         <view bindtap="zzblTap" class="nav-item">
@@ -30,17 +30,17 @@
           <text>资质办理</text>
         </view>
       </block>
-
-
-    </view>
-
-    <view class="navs">
       <block>
         <view bindtap="sbzlTap" class="nav-item">
           <image src="../images/menu_sb.png" class="nav-image" />
           <text>商标专利</text>
         </view>
       </block>
+
+    </view>
+
+    <view class="navs">
+
       <block>
         <view bindtap="hpTap" class="nav-item">
           <image src="../images/menu_hp.png" class="nav-image" />
@@ -55,7 +55,11 @@
         </view>
       </block>
 
+      <block>
+        <view class="nav-item">
 
+        </view>
+      </block>
     </view>
 
 
